@@ -38,20 +38,24 @@ public class SnakesAndLaddersGame {
 	}
 
 	public void start() {
+		
 		Spelar nextPlayer = spelarar.get(0);
 		int teller = 0;
 		while (vinner == null) {
 			System.out.println("next player is: " + nextPlayer.getNavn());
 			nextPlayer.spillTur();
-			if(nextPlayer.isVinner()) {
+			if (nextPlayer.isVinner()) {
 				vinner = nextPlayer;
+				System.out.println();
+				System.out.println();
 				System.out.println("Winner is : " + nextPlayer.getNavn());
 				break;
 			}
-			teller ++;
-			System.out.println("Teller : " + teller);
+			teller++;
+			System.out.println();
+			System.out.println();
 			nextPlayer = spelarar.get(teller % 3);
-		
+
 		}
 	}
 
