@@ -17,7 +17,6 @@ public class Spelar {
 	public void setBrett(Brett brett) {
 		this.brett = brett;
 		this.brikke = new Brikke(brett.getStartRute());
-		
 	}
 	
 	public String getNavn() {
@@ -36,6 +35,7 @@ public class Spelar {
 			this.vinner = true;
 		}
 	}
+	
 	public Boolean isVinner() {
 		return this.vinner;
 	}

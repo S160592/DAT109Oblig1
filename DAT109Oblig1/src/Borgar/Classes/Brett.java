@@ -6,11 +6,10 @@ import java.util.List;
 public class Brett {
 
 	private Rute[] ruter = new Rute[100];
-	public String navn;
 
 	public Brett() {
 		createRoutes();
-		this.navn = "Brettet";
+
 	}
 
 	private void createRoutes() {
