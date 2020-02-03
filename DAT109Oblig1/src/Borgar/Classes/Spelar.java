@@ -23,14 +23,31 @@ public class Spelar {
 		return this.navn;
 	}
 	
+	public Rute getPlassering() {
+		return this.brikke.getPlass();
+	}
+	
 	public void spillTur() {
 		Terning terning = new Terning();
 		terning.trill();
 		System.err.println(this.navn + " triller : " + terning.getVerdi());
+		try {
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println(this.navn + " stod på plass " + brikke.getPlass().getRuteNr());
 		
 		brikke.setPlass(brett.nyPlassering(this.brikke.getPlass(), terning.getVerdi()));	
 		System.out.println(this.navn + " flytta til plass " + brikke.getPlass().getRuteNr());
+		if(brikke.getPlass().jumpTo().equals(brikke.getPlass())) {
+		
+		}else {
+			System.out.println("jumps to :");
+			brikke.setPlass(brikke.getPlass().jumpTo());
+			System.out.println(brikke.getPlass().getRuteNr());
+		}
 		if(brikke.getPlass().getRuteNr() == 99) {
 			this.vinner = true;
 		}

@@ -16,6 +16,11 @@ public class Brett {
 		for (int i = 0; i < 100; i++) {
 			ruter[i] = new Rute(i);
 		}
+		ruter[2].setJumpTo(ruter[7]);
+		ruter[22].setJumpTo(ruter[5]);
+		ruter[11].setJumpTo(ruter[78]);
+		ruter[79].setJumpTo(ruter[57]);
+		
 
 	}
 
@@ -31,4 +36,6 @@ public class Brett {
 		}
 	}
 
+	
+	
 }
