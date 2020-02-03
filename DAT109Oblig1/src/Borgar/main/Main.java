@@ -15,7 +15,7 @@ public class Main {
 		
 
 		
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 10; i++) {
 			Spelar borgar = new Spelar("Borgar");
 
 			Spelar jonas = new Spelar("Jonas");
@@ -28,7 +28,7 @@ public class Main {
 			game.start();
 			
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(5000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

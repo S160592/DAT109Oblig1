@@ -20,6 +20,7 @@ public class Brett {
 		ruter[22].setJumpTo(ruter[5]);
 		ruter[11].setJumpTo(ruter[78]);
 		ruter[79].setJumpTo(ruter[57]);
+		ruter[80].setJumpTo(ruter[48]);
 		
 
 	}

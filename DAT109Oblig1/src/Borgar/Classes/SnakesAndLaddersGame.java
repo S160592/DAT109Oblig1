@@ -45,21 +45,15 @@ public class SnakesAndLaddersGame {
 			spelarar.forEach(x -> System.out.println(x.getNavn() + " står på plass: " + x.getPlassering().getRuteNr()));
 			System.out.println();
 			System.out.println();
-			System.out.println("next player is: " + nextPlayer.getNavn());
+			System.out.println("Neste spelar er : " + nextPlayer.getNavn());
 			nextPlayer.spillTur();
 			
-			
-			try {
-				Thread.sleep(50);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		
 			if (nextPlayer.isVinner()) {
 				vinner = nextPlayer;
 				System.out.println();
 				System.out.println();
-				System.out.println("Winner is : " + nextPlayer.getNavn());
+				System.err.println("Winner is : " + nextPlayer.getNavn());
 				break;
 			}
 			teller++;
