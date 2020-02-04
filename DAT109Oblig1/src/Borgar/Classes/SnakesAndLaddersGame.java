@@ -37,6 +37,9 @@ public class SnakesAndLaddersGame {
 		}
 	}
 
+	/**
+	 * Start the game. This will run a simulation of the game.
+	 */
 	public void start() {
 		
 		Spelar nextPlayer = spelarar.get(0);

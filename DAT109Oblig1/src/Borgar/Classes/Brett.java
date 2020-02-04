@@ -7,11 +7,17 @@ public class Brett {
 
 	private Rute[] ruter = new Rute[100];
 
+	/**
+	 * Constructor. Will also create the Rute.
+	 */
 	public Brett() {
 		createRoutes();
 
 	}
 
+	/**
+	 * Creates the Rute. 
+	 */
 	private void createRoutes() {
 		for (int i = 0; i < 100; i++) {
 			ruter[i] = new Rute(i);
@@ -25,10 +31,20 @@ public class Brett {
 
 	}
 
+	/**
+	 * 
+	 * @return the first Rute in the game.
+	 */
 	public Rute getStartRute() {
 		return this.ruter[0];
 	}
 
+	/**
+	 * Calculates the next location based on the antallRute.
+	 * @param rute, is the corrent location of the player.
+	 * @param antallRute the value of the dice.
+	 * @return a pointer to the new Rute. please is the jumpTo()-method on the Rute to jump to next location.
+	 */
 	public Rute nyPlassering(Rute rute, int antallRute) {
 		if (rute.getRuteNr() + antallRute > 99) {
 			return rute;

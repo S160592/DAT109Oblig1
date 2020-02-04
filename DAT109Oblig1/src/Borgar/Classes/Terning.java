@@ -20,10 +20,8 @@ public class Terning {
 	 * Toss the dice Generates a number from 1-6, can be collected using getVerdi()
 	 */
 	public void trill() {
-		// TODO Generate random value from 1-6
-		Random random = new Random();
-		verdi =  random.nextInt((6-1) + 1) + 1;
-		//this.verdi = 1;
+			Random random = new Random();
+			verdi = random.nextInt((6 - 1) + 1) + 1;		
 	}
 
 	/**
