@@ -41,32 +41,36 @@ public class SnakesAndLaddersGame {
 	 * Start the game. This will run a simulation of the game.
 	 */
 	public void start() {
-		
-		Spelar nextPlayer = spelarar.get(0);
-		int teller = 0;
-		while (vinner == null) {
-			spelarar.forEach(x -> System.out.println(x.getNavn() + " står på plass: " + x.getPlassering().getRuteNr()));
-			System.out.println();
-			System.out.println();
-			System.out.println("Neste spelar er : " + nextPlayer.getNavn());
-			nextPlayer.spillTur();
-			
-		
-			if (nextPlayer.isVinner()) {
-				vinner = nextPlayer;
+		if (spelarar.size() > 1 && spelarar.size() < 5) {
+
+			Spelar nextPlayer = spelarar.get(0);
+			int teller = 0;
+			while (vinner == null) {
+				spelarar.forEach(
+						x -> System.out.println(x.getNavn() + " står på plass: " + x.getPlassering().getRuteNr()));
 				System.out.println();
 				System.out.println();
-				System.err.println("Winner is : " + nextPlayer.getNavn());
-				break;
+				System.out.println("Neste spelar er : " + nextPlayer.getNavn());
+				nextPlayer.spillTur();
+
+				if (nextPlayer.isVinner()) {
+					vinner = nextPlayer;
+					System.out.println();
+					System.out.println();
+					System.err.println("Winner is : " + nextPlayer.getNavn());
+					break;
+				}
+				teller++;
+				System.out.println();
+				System.out.println();
+				nextPlayer = spelarar.get(teller % 3);
+
 			}
-			teller++;
-			System.out.println();
-			System.out.println();
-			nextPlayer = spelarar.get(teller % 3);
-			
-			
-
+		} else {
+			System.out.println("Manglar spelarar");
 		}
-	}
 
+	}
+	
+	
 }

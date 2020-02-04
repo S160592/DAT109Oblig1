@@ -58,42 +58,38 @@ public class Spelar {
 		// perform the move
 		move();
 
-		// if the value is 6, toss once more.
-		if (terning.getVerdi() == 6) {
-			System.out.println(this.navn + " kasta 6 og får trille ein gong til.");
+		// if the value from tossing the dice is 6 three times, move the brikke to start.
+		for (int i = 0; i < 3 && terning.getVerdi() == 6; i++) {
+			if (i == 2) {
 
-			terning.trill();
-			move();
-
-			if (terning.getVerdi() == 6) {
-				System.out.println(this.navn + " kasta 6 to gongar, og får trille ein gong til.");
-
+				System.err.println(this.navn + " kasta 6 tre gongar, flytt tilbake til start");
+				brikke.setPlass(brett.getStartRute());
+				// needs to know if it's the first time 
+				backOnStart = true;			
+			} else {
+				System.out.println(this.navn + " kasta 6 " + (i + 1) + " gongar og får trille ein gong til.");
 				terning.trill();
 				move();
-				
-				
-				// if you still get 6, move back to Start.
-				if (terning.getVerdi() == 6) {
-					System.err.println(this.navn + " kasta 6 tre gongar, flytt tilbake til start");
-					brikke.setPlass(brett.getStartRute());
-					backOnStart = true;
-				}
 			}
 
 		}
 
 	}
 
+	/**
+	 * Perform the move based on the toss.
+	 */
 	private void move() {
 		// NOTE
 		// Det er lagt til nokon sleep innimellom for å minske hastigheiten på spelet,
 		// samt gi maskina tid til å skrive ut.
 		System.out.println(this.navn + " triller : " + terning.getVerdi());
 
+		// if it's back on start after getting 6 three times, it needs 6 to continue.
 		if (backOnStart && terning.getVerdi() != 6) {
 			System.out.println("back on start");
 		}
-
+		// otherwise
 		else {
 			backOnStart = false;
 			try {
