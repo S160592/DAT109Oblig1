@@ -13,6 +13,7 @@ class TestTerning {
 	void testRandom() {
 		Terning terning = new Terning();
 		for (int i = 0; i < 100; i++) {
+			// Toss the dice
 			terning.trill();
 			assertTrue(terning.getVerdi() > 0 && terning.getVerdi() < 7);
 		}
