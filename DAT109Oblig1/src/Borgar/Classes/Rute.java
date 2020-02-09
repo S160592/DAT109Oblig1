@@ -8,8 +8,8 @@ package Borgar.Classes;
 
 public class Rute {
 	
-	private int ruteNr;
-	private Rute jumpTo;
+	protected int ruteNr;
+	protected Rute jumpTo;
 	
 	public Rute(int ruteNr) {
 		this.ruteNr = ruteNr;
@@ -37,8 +37,8 @@ public class Rute {
 	 * @param rute
 	 * Where the jump is going. needs to be a higher rutenr for ladders, and lower for snake.
 	 */
-	public void setJumpTo(Rute rute) {
-		this.jumpTo = rute;
-	}
-	
+//	public void setJumpTo(Rute rute) {
+//		this.jumpTo = rute;
+//	}
+//	
 }
