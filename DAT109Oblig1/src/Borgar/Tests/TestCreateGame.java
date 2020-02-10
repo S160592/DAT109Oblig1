@@ -27,6 +27,7 @@ class TestCreateGame {
 		assertTrue(game.addPlayer(spelar4));
 		assertTrue(game.addPlayer(spelar5));
 		
+		
 	}
 
 }
