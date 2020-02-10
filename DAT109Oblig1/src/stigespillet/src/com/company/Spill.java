@@ -51,6 +51,7 @@ public class Spill {
                     System.out.println(test.getNavn());
                   int teller =  test.runde();
                    ferdig = brett.flyttSpiller(test, teller);
+
                    // System.out.println(teller);
                     System.out.println("------------------------------");
 

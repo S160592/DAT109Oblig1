@@ -29,20 +29,22 @@ public class Brikke extends Brett {
 
         this.plass = plass;
     }
-/*
-    //flytt en  brikke. verdi er verdien på terning.
+
+//   flytt en  brikke. verdi er verdien på terning.
     public  void flyttBrikke(Spiller spiller, int verdi) {
         int posisjon = posisjoner.get(spiller);
         posisjon = posisjon + verdi;
         //this.posisjoner.put(spiller, verdi);
 
+        System.out.println(spiller + "er på plass " + posisjon);
+
         //hvis spilleren er havner på rutenr 100 så vinner han
-        if (posisjon == 100) {
-            System.out.println("spiller " + spiller + " vinner!");
+        if (posisjon >= 100) {
+            System.out.println( spiller + " vinner!");
             posisjoner.put(spiller, 100);
 
         }
-    } */
+    }
 
 
 }
