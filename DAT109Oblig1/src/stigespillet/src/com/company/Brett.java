@@ -20,7 +20,8 @@ public class Brett {
             this.posisjoner.put(spiller, 0);
         }
 
-        // lager brette med rad * rekker  ,hentet fra YT.
+        //ikke i bruk
+        // lager brette med rad * rekker  ,hentet fra YT
         brett = new int[rad][rekke];
         for (int rad1 = 0; rad1 < rad; rad1++) {
             for (int rekke1 = 0; rekke1 < rekke; rekke1++) {
@@ -31,20 +32,60 @@ public class Brett {
     }
 
 
-
-    public  boolean flyttSpiller(Spiller spiller, int verdi) {
+    public boolean flyttSpiller(Spiller spiller, int verdi) {
         int posisjon = posisjoner.get(spiller);
         posisjon = posisjon + verdi;
+        System.out.println("///er på plass " + posisjon + "///");
 
-        //hvis spilleren er havner på rutenr 100 så vinner han
-        if (posisjon == 100) {
-            System.out.println("spiller " + spiller + " vinner!");
+        //hvis spilleren havner på rutenr 100 så vinner han
+        if (posisjon >= 100) {
+            System.out.println(spiller + " vinner!");
             posisjoner.put(spiller, 100);
+
             return true;
-        }else {
-            posisjoner.put(spiller, posisjon);
-            return false;
         }
+        //stige fra 5 til 10
+        if (posisjon == 5) {
+            posisjoner.put(spiller, 10);
+            System.out.println("går opp en stige ");
+        }
+        //slange fra 17 til 3
+        if (posisjon == 17) {
+            posisjoner.put(spiller, 3);
+
+            System.out.println("ble spist av en slange ");
+        }
+
+        //stige fra 20 til 50
+        if (posisjon == 20) {
+            posisjoner.put(spiller, 10);
+            System.out.println("går opp en stige ");
+        }
+        //slange fra 30 til 20
+        if (posisjon == 30) {
+            posisjoner.put(spiller, 20);
+
+            System.out.println(" ble spist av en slange ");
+        }
+        //stige fra 75 til 98
+        if (posisjon == 75) {
+            posisjoner.put(spiller, 98);
+            System.out.println("går opp en stige ");
+        }
+        //slange fra 81 til 55
+        if (posisjon == 81) {
+            posisjoner.put(spiller, 55);
+
+            System.out.println("spist av en slange ");
+        }
+        else {
+            posisjoner.put(spiller, posisjon);
+        } return false;
+
+
+
+
     }
+
 }
 
