@@ -23,19 +23,16 @@ public class Brett {
 			ruter[i] = new Rute(i);
 		}
 		ruter[2] = new Ladder(2, ruter[7]);
-		//ruter[2].setJumpTo(ruter[7]);
 		
 		ruter[22] = new Snake(22, ruter[5]);
-		//ruter[22].setJumpTo(ruter[5]);
+		
+		ruter[48] = new Snake(48, ruter[0]);
 		
 		ruter[11] = new Ladder(11, ruter[78]);
-		//ruter[11].setJumpTo(ruter[78]);
 		
 		ruter[79] = new Snake(79, ruter[57]);
-//		ruter[79].setJumpTo(ruter[57]);
 		
 		ruter[80] = new Snake(80, ruter[48]);
-//		ruter[80].setJumpTo(ruter[48]);
 		
 
 	}

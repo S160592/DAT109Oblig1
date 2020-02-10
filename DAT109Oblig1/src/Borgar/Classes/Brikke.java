@@ -6,7 +6,6 @@ package Borgar.Classes;
  */
 public class Brikke {
 	
-	private int brikkeNr;
 	private Rute plass;
 	
 	/**

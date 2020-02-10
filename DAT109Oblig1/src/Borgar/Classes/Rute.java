@@ -32,13 +32,4 @@ public class Rute {
 		return this.jumpTo;
 	}
 	
-	/**
-	 * 
-	 * @param rute
-	 * Where the jump is going. needs to be a higher rutenr for ladders, and lower for snake.
-	 */
-//	public void setJumpTo(Rute rute) {
-//		this.jumpTo = rute;
-//	}
-//	
 }
