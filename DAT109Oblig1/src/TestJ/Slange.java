@@ -1,4 +1,4 @@
-package Jonas;
+package TestJ;
 
 /**
  * Spesialisering av Rute. Flytter brikke.

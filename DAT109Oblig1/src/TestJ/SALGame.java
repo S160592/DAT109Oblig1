@@ -1,6 +1,6 @@
-package Jonas;
+package TestJ;
 
-import Jonas.Spiller;
+import TestJ.Spiller;
 
 /**
  * Klasse som definerer spillet.
@@ -12,7 +12,7 @@ public class SALGame {
 	Brett brett = new Brett();
 	
 	/**
-	 * Metode som starter og holder i gang spillet til nokon har fått 99 poeng. Spillerene starter på 0.
+	 * Metode som starter og holder i gang spillet til nokon har fï¿½tt 99 poeng. Spillerene starter pï¿½ 0.
 	 * @param spillere
 	 */
 	public void start(Spiller[] spillere) {

@@ -1,4 +1,4 @@
-package Borgar.Classes;
+package Ovelse1.Classes;
 
 public class Spelar {
 

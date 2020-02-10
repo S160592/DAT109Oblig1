@@ -1,10 +1,10 @@
-package Borgar.main;
+package Ovelse1.main;
 
 import java.util.ArrayList;
 
-import Borgar.Classes.Brikke;
-import Borgar.Classes.SnakesAndLaddersGame;
-import Borgar.Classes.Spelar;
+import Ovelse1.Classes.Brikke;
+import Ovelse1.Classes.SnakesAndLaddersGame;
+import Ovelse1.Classes.Spelar;
 
 public class Main {
 

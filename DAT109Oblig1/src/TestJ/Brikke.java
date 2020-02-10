@@ -1,6 +1,6 @@
-package Jonas;
+package TestJ;
 
-import Jonas.Brett;
+import TestJ.Brett;
 
 /**
  * Klasse som definerer ein brikke.
@@ -29,7 +29,7 @@ public class Brikke {
 	}
 
 	/**
-	 * Metode som tar inn verdi frå terningkastet og plasserer brikken på den nye
+	 * Metode som tar inn verdi frï¿½ terningkastet og plasserer brikken pï¿½ den nye
 	 * ruten.
 	 * 
 	 * @param sum

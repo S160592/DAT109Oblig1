@@ -1,4 +1,4 @@
-package Jonas;
+package TestJ;
 
 import java.util.Random;
 

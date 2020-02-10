@@ -1,4 +1,4 @@
-package Borgar.Classes;
+package Ovelse1.Classes;
 /**
  * 
  * @author Borgar Frøysland Grande

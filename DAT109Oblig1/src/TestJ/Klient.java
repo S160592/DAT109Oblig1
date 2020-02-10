@@ -1,8 +1,8 @@
-package Jonas;
+package TestJ;
 
 import java.util.ArrayList;
 
-import Jonas.Terning;
+import TestJ.Terning;
 
 /**
  * Klasse som oppretter liste av spillere og starter spill.
@@ -17,7 +17,7 @@ public class Klient {
 		Spiller[] spillere = new Spiller[5];
 		spillere[0] = new Spiller("Jon");
 		spillere[1] = new Spiller("per");
-		spillere[2] = new Spiller("pål");
+		spillere[2] = new Spiller("pï¿½l");
 		spillere[3] = new Spiller("ulf");
 		spillere[4] = new Spiller("jan");
 

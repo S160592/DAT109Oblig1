@@ -1,4 +1,4 @@
-package Jonas;
+package TestJ;
 
 /**
  * Klasse som definerer ei rute.
@@ -10,7 +10,7 @@ public class Rute {
 	private int ruteNr;
 
 	/**
-	 * Konstruktør som oppretter ei rute.
+	 * Konstruktï¿½r som oppretter ei rute.
 	 * 
 	 * @param ruteNr
 	 */

@@ -1,4 +1,4 @@
-package Jonas;
+package TestJ;
 
 /**
  * Klasse som definerer eit brett.
@@ -9,9 +9,9 @@ public class Brett {
 	static Rute[] ruter;
 
 	/**
-	 * Oppretter eit nytt brett med nummer på ruter.
+	 * Oppretter eit nytt brett med nummer pï¿½ ruter.
 	 * 
-	 * Inkluderer også slanger(flytter brikken tilbake) og, stiger(flytter brikken
+	 * Inkluderer ogsï¿½ slanger(flytter brikken tilbake) og, stiger(flytter brikken
 	 * fram).
 	 */
 	public Brett() {

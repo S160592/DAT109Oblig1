@@ -1,11 +1,11 @@
-package Borgar.Tests;
+package Ovelse1.Tests;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import Borgar.Classes.Brett;
-import Borgar.Classes.Rute;
+import Ovelse1.Classes.Brett;
+import Ovelse1.Classes.Rute;
 
 class TestPlay {
 

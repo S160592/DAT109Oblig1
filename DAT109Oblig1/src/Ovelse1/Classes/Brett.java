@@ -1,4 +1,4 @@
-package Borgar.Classes;
+package Ovelse1.Classes;
 
 import java.util.ArrayList;
 import java.util.List;

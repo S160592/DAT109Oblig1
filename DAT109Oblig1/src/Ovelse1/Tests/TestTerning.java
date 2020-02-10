@@ -1,9 +1,10 @@
-package Borgar.Tests;
+package Ovelse1.Tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import Borgar.Classes.Terning;;
+
+import Ovelse1.Classes.Terning;;
 class TestTerning {
 
 	/**

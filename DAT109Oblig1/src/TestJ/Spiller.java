@@ -1,4 +1,4 @@
-package Jonas;
+package TestJ;
 
 /**
  * Klasse som definerer ein spiller.
@@ -12,7 +12,7 @@ public class Spiller {
 	private Brikke brikke;
 
 	/**
-	 * Konstruktør som oppretter ein ny spiller.
+	 * Konstruktï¿½r som oppretter ein ny spiller.
 	 * 
 	 * @param navn
 	 */

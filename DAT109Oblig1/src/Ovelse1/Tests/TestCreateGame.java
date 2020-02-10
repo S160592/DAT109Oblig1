@@ -1,12 +1,12 @@
-package Borgar.Tests;
+package Ovelse1.Tests;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import Borgar.Classes.SnakesAndLaddersGame;
-import Borgar.Classes.Spelar;
+import Ovelse1.Classes.SnakesAndLaddersGame;
+import Ovelse1.Classes.Spelar;
 
 class TestCreateGame {
 
